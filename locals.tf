@@ -1,0 +1,3 @@
+locals {
+  # All local variables.
+}
