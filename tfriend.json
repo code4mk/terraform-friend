@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "workspace_name": "infra_dev",
+    "env_file": "dev.tfvars"
+  },
+  "stage": {
+    "workspace_name": "infra_stage",
+    "env_file": "stage.tfvars"
+  },
+  "prod": {
+    "workspace_name": "infra_prod",
+    "env_file": "prod.tfvars"
+  }
+}
