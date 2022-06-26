@@ -1,0 +1,5 @@
+- name: Install aws-cli.
+  hosts: prod_jumphost
+  become: true
+  roles:
+   - aws-cli

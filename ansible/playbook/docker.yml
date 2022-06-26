@@ -1,0 +1,19 @@
+- name: Install Docker playbook.
+  hosts: prod_jumphost
+  become: true
+  roles:
+   - docker
+  tasks:
+    # https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html
+    - name: Example clone of a single branch
+      become: true
+      git:
+        repo: https://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@github.com/Skipper-Hospitality/cash
+        dest: /skipper/cash
+        single_branch: yes
+        version: dev
+        force: no
+        ignore_errors: yes
+        
+      environment:
+        GIT_TERMINAL_PROMPT: 0

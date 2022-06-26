@@ -1,0 +1,6 @@
+[prod_jumphost]
+your_ip ansible_ssh_user=ubuntu
+
+[prod_jumphost:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=sk.pem
